@@ -79,9 +79,45 @@ body{
                 height: 40px;
                 border-radius: 3px;
                 border: 1px solid hsl(246, 25%, 77%);
-                
+                padding: 10px;
+                background-color: transparent;
             }}}
 
+            ::placeholder{
+                
+                font-family: $font;
+                font-weight: 700;
+                font-size: 0.8em;
+                
+
+            }
+            .section-2__form__btn{
+                width: 100%;
+                border: none;
+                border-radius: 10px;
+                height: 40px;
+                background-color: $Green;
+                box-shadow: 0 5px 2px 1px #2dbb7f;
+                padding: 10px;
+                font-family: $font;
+                font-size: 1em;
+                font-weight: 500;
+                color: $GrayishBlue;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+
+            .section-2__form_txt{
+                font-size: 0.6em;
+                line-height: 1.6;
+                margin: 5px 35px;
+                text-align: center;
+                font-weight: 300;
+                .section-2__form_txt_span{
+                    color: $Red;
+                    font-weight: 700;
+                }
+            }
 
         }}
 
@@ -91,5 +127,6 @@ footer{
         margin: 35px 0; 
         font-size: 11px; 
         text-align: center; 
-        a { color: hsl(228, 45%, 44%); }}
+        a { color: hsl(120, 75%, 14%); 
+            text-decoration: none;}}
 }

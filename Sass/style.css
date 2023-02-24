@@ -71,6 +71,44 @@ body {
   height: 40px;
   border-radius: 3px;
   border: 1px solid hsl(246deg, 25%, 77%);
+  padding: 10px;
+  background-color: transparent;
+}
+.container .section-2 ::-moz-placeholder {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.container .section-2 ::placeholder {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.container .section-2 .section-2__form__btn {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  background-color: hsl(154deg, 59%, 51%);
+  box-shadow: 0 5px 2px 1px #2dbb7f;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff4ef;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.container .section-2 .section-2__form_txt {
+  font-size: 0.6em;
+  line-height: 1.6;
+  margin: 5px 35px;
+  text-align: center;
+  font-weight: 300;
+}
+.container .section-2 .section-2__form_txt .section-2__form_txt_span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
 }
 
 footer .attribution {
@@ -79,5 +117,6 @@ footer .attribution {
   text-align: center;
 }
 footer .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(120deg, 75%, 14%);
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
