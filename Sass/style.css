@@ -72,8 +72,20 @@ body {
   height: 40px;
   border-radius: 3px;
   border: 1px solid hsl(246deg, 25%, 77%);
-  padding: 10px;
+  padding: 15px;
   background-color: transparent;
+  /*background-image: url(/images/icon-error.svg);*/
+  background-repeat: no-repeat;
+  background-position: 400px 11px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.container .section-2 .txt_error {
+  font-size: 0.6em;
+  text-align: end;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 500;
+  display: none;
 }
 .container .section-2 ::-moz-placeholder {
   font-family: "Poppins";
@@ -99,6 +111,10 @@ body {
   color: #fff4ef;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+.container .section-2 .section-2__form__btn:hover {
+  background-color: hsla(154deg, 59%, 51%, 0.747);
+  cursor: pointer;
 }
 .container .section-2 .section-2__form_txt {
   font-size: 0.6em;
@@ -131,9 +147,12 @@ footer .attribution a {
     margin-top: 50px;
     padding: 40px;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 1100px;
-    gap: 10px;
+    justify-content: center;
+    max-width: 760px;
+    gap: 40px;
+  }
+  .container .section-1 {
+    max-width: 300px;
   }
   .container .section-1 .section-1__title {
     text-align: left;
@@ -143,13 +162,27 @@ footer .attribution a {
     margin: 30px 0;
     text-align: left;
   }
+  .container .section-2 {
+    width: 300px;
+  }
   .container .section-2 .section-2__try-container {
     padding: 10px 77px;
   }
 }
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 950px;
+  }
+  .container .section-1 {
+    max-width: 400px;
+  }
+  .container .section-2 {
+    max-width: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
-    margin-top: 140px;
+    margin-top: 70px;
     padding: 70px;
     gap: 70px;
     max-width: 1320px;
@@ -167,7 +200,8 @@ footer .attribution a {
     margin-right: 0;
   }
   .container .section-2 {
-    max-width: 540px;
+    max-width: 600px;
+    width: 540px;
   }
   .container .section-2 .section-2__try-container {
     padding: 20px 77px;
@@ -177,11 +211,19 @@ footer .attribution a {
   }
   .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form__first-name, .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form__last-name, .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form__email, .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form__pass {
     height: 50px;
-    margin: 10px 0;
+    margin: 6px 0;
+  }
+  .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form__btn {
+    height: 50px;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  .container .section-2 .section-2__form-container .section-2__form-container__form .section-2__form_txt {
+    font-size: 0.7em;
   }
   footer .attribution {
     font-size: 1.2em;
-    margin: 100px;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -193,5 +235,8 @@ footer .attribution a {
   }
   .container .section-2 {
     margin-right: 100px;
+  }
+  .container .section-2 .section-2__form__btn {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
