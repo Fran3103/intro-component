@@ -85,18 +85,20 @@ body{
                 /*background-image: url(/images/icon-error.svg);*/
                 
                 background-repeat: no-repeat;
-                background-position: 400px 11px;
+                background-position: 240px ;
+                
                 font-family: $font;
                 font-weight: 600;
                 
                 
             }}}
-            .txt_error{
+            .txt_error, .firsf-name_error , .last-name_error, .email_error, .pass_error{
                 font-size: 0.6em;
                 text-align: end;
                 color: $Red;
                 font-weight: 500;
                 display: none;
+                justify-content: flex-end;
                 
             }
             ::placeholder{
@@ -149,14 +151,59 @@ footer{
         a { color: hsl(120, 75%, 14%); 
             text-decoration: none;}}
 }
+@media screen and (min-width:430px) {
+    .container{
+    .section-2{
+    .section-2__form-container{
+    .section-2__form-container__form{
+    .section-2__form__first-name, .section-2__form__last-name, .section-2__form__email, .section-2__form__pass{
+        background-position: 280px 
+    }
+    }
+}}
+}}
 
+@media screen and (min-width:500px) {
+    .container{
+    .section-2{
+    .section-2__form-container{
+    .section-2__form-container__form{
+    .section-2__form__first-name, .section-2__form__last-name, .section-2__form__email, .section-2__form__pass{
+        background-position: 340px 
+    }
+    }
+}}
+}}
+
+@media screen and (min-width:550px) {
+    .container{
+    .section-2{
+    .section-2__form-container{
+    .section-2__form-container__form{
+    .section-2__form__first-name, .section-2__form__last-name, .section-2__form__email, .section-2__form__pass{
+        background-position: 390px 
+    }
+    }
+}}
+}}
 
 @media screen and (min-width: 760px) {
 
+    .container{
+        .section-2{
+        .section-2__form-container{
+        .section-2__form-container__form{
+        .section-2__form__first-name, .section-2__form__last-name, .section-2__form__email, .section-2__form__pass{
+            background-position: 220px 
+        }
+        }
+    }}
+    
     body{
         background: url(/images/bg-intro-desktop.png);
         background-color: $Red;
         
+}
       
     }
     .container{
@@ -180,6 +227,7 @@ footer{
     }
 
     .section-2{
+        
         width: 300px;
         .section-2__try-container{
             padding: 10px 77px;
@@ -205,6 +253,8 @@ footer{
 }
 
 @media screen and (min-width:1200px) {
+
+    
 
     .container{
         margin-top: 70px;
@@ -240,7 +290,7 @@ footer{
 
                 height: 50px;
                 margin: 6px 0;
-
+                background-position: 400px;
             }
         
         .section-2__form__btn{
@@ -254,8 +304,10 @@ footer{
         }
         }
     }
+
     
     }
+    
     footer{
         .attribution{
             font-size: 1.2em;
